@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.menu-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.menu-category {
+    margin: 20px 0;
+}
+
+.menu-toggle {
+    padding: 10px 20px;
+    background-color: #d8dae3;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+
+.menu-toggle:hover {
+    background-color: #3f4f7b;
+}
+
+.menu-list {
+    display: none;
+    margin-top: 10px;
+}
+
+.menu-item {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.menu-item h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #5c6bc0;
+}
+
+.menu-item p {
+    font-size: 16px;
+    color: #666;
+}
+/* Set a background image for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('images.jpg'); /* Change the URL to the path of your image */
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center; /* Keeps the image centered */
+    padding: 20px;
+    color: white; /* Text color for better contrast */
+}
+
+/* Container for the menu */
+.menu-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Menu header */
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffcc00; /* Yellow color for header */
+}
+
+/* Menu category button styles */
+.menu-category {
+    margin: 20px 0;
+}
+
+.menu-toggle {
+    padding: 10px 20px;
+    background-color: #ffcc00; /* Yellow background for buttons */
+    color: #333;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.menu-toggle:hover {
+    background-color: #ffa000; /* Slightly darker yellow on hover */
+}
+
+/* Menu list styles */
+.menu-list {
+    display: none;
+    margin-top: 10px;
+}
+
+/* Menu item styling */
+.menu-item {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.menu-item h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #ffcc00;
+}
+
+.menu-item p {
+    font-size: 16px;
+    color: #333;
+}
