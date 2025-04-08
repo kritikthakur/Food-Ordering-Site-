@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="menu-container">
+        <h1> Menu</h1>
+        <div class="menu-category">
+            <button class="menu-toggle" onclick="toggleMenu('drinks')">Drinks</button>
+            <div id="drinks" class="menu-list"></div>
+        </div>
+
+        <div class="menu-category">
+            <button class="menu-toggle" onclick="toggleMenu('food')">Food</button>
+            <div id="food" class="menu-list"></div>
+        </div>
+
+        <div class="menu-category">
+            <button class="menu-toggle" onclick="toggleMenu('desserts')">Desserts</button>
+            <div id="desserts" class="menu-list"></div>
+        </div>
+    </div>
+
+    <script src="scrip.js"></script>
+</body>
+</html>
