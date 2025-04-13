@@ -21,11 +21,9 @@ h1 {
     margin-bottom: 20px;
     color: #333;
 }
-
-.menu-category {
-    margin: 20px 0;
+.menu-category{
+	margin 20px 0;
 }
-
 .menu-toggle {
     padding: 10px 20px;
     background-color: #d8dae3;
