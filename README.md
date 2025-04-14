@@ -6,4 +6,12 @@ Team Members :-
 3. Krishna Bhardwaj
 
 Project Description :-
-This is a simple food ordering website that allows users to view a restaurant menu and place orders online.
+Welcome to Berger Hut, a simple and stylish food ordering website designed for burger lovers! Built using HTML, CSS, and JavaScript, this project simulates an online platform where users can browse a burger menu and place orders.
+
+Tech Stack
+HTML – Structure of the web pages
+CSS – Styling and layout
+JavaScript – Dynamic interactions and cart logic
+
+License
+This project is open source and free to use.
