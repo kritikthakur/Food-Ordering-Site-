@@ -1,27 +1,46 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Noto Sans', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', sans-serif;
 }
-/*header*/
 
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Header */
 header {
   background-color: #070e16;
   padding: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  animation: fadeIn 1s ease forwards;
 }
 
 .logo img {
   height: 60px;
-  margin-left:50px;
+  margin-left: 50px;
 }
 
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: flex-end;
 }
 
 nav ul li {
@@ -40,8 +59,7 @@ nav ul li a:hover {
   color: #ff0000;
 }
 
-/*hero*/
-
+/* Hero Section */
 .hero {
   background-image: url("hero-background1.jpg");
   background-size: cover;
@@ -50,13 +68,15 @@ nav ul li a:hover {
   display: flex;
   text-align: left;
   color: #fff;
+  animation: fadeIn 1.2s ease forwards;
 }
 
 .hero-content {
   max-width: 600px;
   padding: 20px;
-  margin-top :50px;
+  margin-top: 50px;
   margin-left: 4%;
+  animation: slideInLeft 1s ease forwards;
 }
 
 .hero-content h1 {
@@ -77,19 +97,20 @@ nav ul li a:hover {
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn:hover {
   background-color: #e60000;
+  transform: translateY(-3px);
 }
 
-/*about*/
-
+/* About Section */
 .about {
   display: flex;
   align-items: center;
   padding: 80px 0;
+  animation: fadeIn 1.2s ease forwards;
 }
 
 .about-content {
@@ -98,6 +119,7 @@ nav ul li a:hover {
   padding-right: 50px;
   color: #fff;
   margin-left: 5%;
+  animation: slideInLeft 1s ease forwards;
 }
 
 .about h2 {
@@ -113,6 +135,7 @@ nav ul li a:hover {
 .about-image {
   max-width: 50%;
   margin-right: 5%;
+  animation: slideInRight 1s ease forwards;
 }
 
 .about-image img {
@@ -125,11 +148,12 @@ nav ul li a:hover {
   background-color: #070e16;
 }
 
-/* menu*/
+/* Menu Section */
 .menu {
   padding: 80px 0;
   text-align: center;
   background-color: #070e16;
+  animation: fadeIn 1s ease forwards;
 }
 
 .menu h2 {
@@ -147,6 +171,12 @@ nav ul li a:hover {
   max-width: 300px;
   margin: 0 20px;
   text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
 .menu-item img {
@@ -168,12 +198,12 @@ nav ul li a:hover {
   color: #ffffff;
 }
 
-/* reservations*/
-
+/* Reservations Section */
 .reservations {
   background-color: #1f1f1f;
   padding: 80px 0;
   text-align: center;
+  animation: fadeIn 1.2s ease forwards;
 }
 
 .reservation-form {
@@ -183,6 +213,7 @@ nav ul li a:hover {
   padding: 40px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  animation: slideInLeft 1s ease forwards;
 }
 
 .reservation-form h2 {
@@ -209,19 +240,20 @@ nav ul li a:hover {
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .reservation-form form button:hover {
   background-color: #e60000;
+  transform: translateY(-3px);
 }
 
-/* Testimonials Section*/
-
+/* Testimonials Section */
 .testimonials {
   padding: 80px 0;
   text-align: center;
   background-color: #070e16;
+  animation: fadeIn 1.2s ease forwards;
 }
 
 .testimonials h2 {
@@ -234,6 +266,7 @@ nav ul li a:hover {
   max-width: 600px;
   margin: 0 auto 40px;
   text-align: left;
+  animation: slideInLeft 1s ease forwards;
 }
 
 .testimonial img {
@@ -256,12 +289,12 @@ nav ul li a:hover {
   color: #fff;
 }
 
-/* Gallery Section*/
-
+/* Gallery Section */
 .gallery {
   padding: 80px 0;
   text-align: center;
   background-color: #070e16;
+  animation: fadeIn 1.2s ease forwards;
 }
 
 .gallery h2 {
@@ -282,15 +315,21 @@ nav ul li a:hover {
   width: 100%;
   height: auto;
   border-radius: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Contact Section*/
+.image-item img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
 
+/* Contact Section */
 .contact {
   background-color: #333;
   padding: 80px 0;
   text-align: center;
   color: #fff;
+  animation: fadeIn 1.2s ease forwards;
 }
 
 .contact-container {
@@ -341,20 +380,21 @@ nav ul li a:hover {
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .contact-form button:hover {
   background-color: #e60000;
+  transform: translateY(-3px);
 }
 
-/* Footer*/
-
+/* Footer */
 .footer {
   background-color: #070e16;
   padding: 40px 0;
   color: #fff;
   text-align: center;
+  animation: fadeIn 1.2s ease forwards;
 }
 
 .footer-content {
@@ -386,63 +426,15 @@ nav ul li a:hover {
 
 /* Mobile Menu Button */
 .mobile-menu-button {
-    display: none;
-    cursor: pointer;
-    font-size: 30px;
-    color: white;
-}
-  
-@media (max-width: 768px) {
-    .mobile-menu-button {
-      display: block;
-      margin-right: 20px;
-    }
-  
-    nav ul {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      background-color: #070e16;
-    }
-  
-    nav ul.active {
-      display: flex;
-    }
-  
-    nav ul li {
-      margin: 10px 0;
-    }
-}
-  
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: flex-end;
-}
-
-nav ul li {
-  display: inline-block;
-  margin-right: 15px;
-}
-
-nav ul li a {
-  text-decoration: none;
+  display: none;
+  cursor: pointer;
+  font-size: 30px;
   color: white;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: #ff0000;
 }
 
 @media (max-width: 768px) {
   .mobile-menu-button {
     display: block;
-    margin-left: auto;
     margin-right: 20px;
   }
 
@@ -468,16 +460,6 @@ nav ul li a:hover {
   }
 
   nav ul li a {
-    font-size: 18px;
-  }
-}
-
-/* Gallery Image Hover Effect */
-.image-item img {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.image-item img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+  }
 }
