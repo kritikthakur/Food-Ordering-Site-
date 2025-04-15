@@ -12,7 +12,12 @@
         <h1>Menu</h1>
 
         <div class="menu-category">
-            <button class="menu-toggle" onclick="toggleMenu('drinks')">Drinks</button>
+            <button class="menu-toggle" onclick="goToDrinkspage()">Drinks</button>
+            <script>
+                function goToDrinkspage(){
+                    window.location.href='drinks.html';
+                }
+            </script>
             <div id="drinks" class="menu-list"></div>
         </div>
 
