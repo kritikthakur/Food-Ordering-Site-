@@ -6,16 +6,22 @@ const menuData = {
         { name: 'Lemonade', description: 'A refreshing tangy lemonade.', price: '$2.50' },
     ],
     food: [
-        { name: 'Burger', description: 'Flaky buttery croissant.', price: '$2.00' },
-        { name: 'cheese Burger', description: 'Grilled sandwich with your choice of fillings.', price: '$5.00' },
-        { name: 'Chicken Burger', description: 'Fresh bagel with cream cheese.', price: '$2.50' },
-        { name: 'Ham Burger', description: 'Fresh bagel with cream cheese.', price: '$2.50' },
+        { name: 'Burger', description: 'Juicy grilled beef patty with lettuce and tomato.', price: '$4.00' },
+        { name: 'Cheese Burger', description: 'Grilled burger with melted cheese.', price: '$5.00' },
+        { name: 'Chicken Burger', description: 'Crispy chicken burger with mayo.', price: '$4.50' },
+        { name: 'Ham Burger', description: 'Grilled ham with onions and cheese.', price: '$4.20' },
     ],
     desserts: [
         { name: 'Chocolate Cake', description: 'A decadent chocolate cake with icing.', price: '$3.00' },
         { name: 'Cheesecake', description: 'Rich and creamy cheesecake with berry topping.', price: '$3.50' },
         { name: 'Cookies', description: 'Freshly baked chocolate chip cookies.', price: '$1.50' },
     ],
+    sandwiches: [
+        { name: 'Grilled Cheese', description: 'Classic grilled cheese sandwich.', price: '$3.00' },
+        { name: 'Veggie Sandwich', description: 'Fresh veggies with hummus.', price: '$3.50' },
+        { name: 'Chicken Sandwich', description: 'Grilled chicken with lettuce and mayo.', price: '$4.00' },
+        { name: 'Club Sandwich', description: 'Triple layer sandwich with bacon and turkey.', price: '$4.50' }
+    ]
 };
 
 // Function to create and display menu items dynamically
