@@ -5,7 +5,7 @@ const menuData = {
         { name: 'Tea', description: 'A refreshing hot or iced tea.', price: '$2.00' },
         { name: 'Lemonade', description: 'A refreshing tangy lemonade.', price: '$2.50' },
     ],
-    food: [
+    burger: [
         { name: 'Burger', description: 'Juicy grilled beef patty with lettuce and tomato.', price: '$4.00' },
         { name: 'Cheese Burger', description: 'Grilled burger with melted cheese.', price: '$5.00' },
         { name: 'Chicken Burger', description: 'Crispy chicken burger with mayo.', price: '$4.50' },
