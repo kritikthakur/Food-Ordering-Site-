@@ -22,7 +22,12 @@
         </div>
 
         <div class="menu-category">
-            <button class="menu-toggle" onclick="toggleMenu('burger')">Burger</button>
+            <button class="menu-toggle" onclick="goToBurgerspage()">Burgers</button>
+            <script>
+                function goToBurgerspage(){
+                    window.location.href='burgers.html';
+                }
+            </script>
             <div id="burger" class="menu-list"></div>
         </div>
 
