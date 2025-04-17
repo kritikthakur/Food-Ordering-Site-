@@ -94,11 +94,13 @@ body {
     background: linear-gradient(135deg, #ff9900, #ffcc00);
     transform: scale(1.05);
   }
-  /* Cart link styling for desktop */
+  
+  /* Cart link styling for desktop: center-ish */
   .cart-link {
     position: absolute;
     top: 15px;
-    right: 30px;
+    right: 30px; /* A little right of center */
+    transform: translateX(-50%);
     color: #ffcc00;
     background: #203a43;
     border-radius: 8px;
@@ -130,8 +132,8 @@ body {
       position: absolute;
       top: 20px;
       right: 20px;
-      left: auto;
-      transform: none;
+      color: #ffcc00;
+      text-decoration: none;
       font-size: 1.2em;
     }
   }
