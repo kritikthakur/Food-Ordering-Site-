@@ -32,13 +32,23 @@
         </div>
 
         <div class="menu-category">
-            <button class="menu-toggle" onclick="toggleMenu('desserts')">Desserts</button>
+            <button class="menu-toggle" onclick="goToDessertspage()">Desserts</button>
+            <script>
+                function goToDessertspage(){
+                    window.location.href='desserts.html';
+                }
+            </script>
             <div id="desserts" class="menu-list"></div>
         </div>
 
         <!-- Sandwiches Section (Styled like others) -->
         <div class="menu-category">
-            <button class="menu-toggle" onclick="toggleMenu('sandwiches')">Sandwiches</button>
+            <button class="menu-toggle" onclick="goToSandwichespage()">Sandwiches</button>
+            <script>
+                function goToSandwichespage(){
+                    window.location.href='sandwiches.html';
+                }
+            </script>
             <div id="sandwiches" class="menu-list"></div>
         </div>
 
