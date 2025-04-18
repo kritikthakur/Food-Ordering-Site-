@@ -1,27 +1,27 @@
-const burgersMenu = [
+const sandwichesMenu = [
     {
       name: 'Grilled Cheese',
       description: 'Classic grilled cheese sandwich.',
       price: 3.00,
-      image: 'coffee.jpg'
+      image: 'grilled-cheese.jpg'
     },
     {
       name: 'Veggie Sandwich',
       description: 'Fresh veggies with hummus.',
       price: 3.50,
-      image: 'tea.jpeg'
+      image: 'veggie-sandwich.jpg'
     },
     {
       name: 'Chicken Sandwich',
       description: 'Grilled chicken with lettuce and mayo.',
       price: 4.00,
-      image: 'https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80'
+      image: 'chicken-sandwich.jpg'
     },
     {
       name: 'Club Sandwich',
       description: 'Triple layer sandwich with bacon and turkey.',
       price: 4.50,
-      image: 'specialdrink.jpeg'
+      image: 'club-sandwich.jpg'
     }
   ];
   
@@ -29,7 +29,7 @@ const burgersMenu = [
     const menuList = document.getElementById('sandwiches');
     menuList.innerHTML = '';
   
-    burgersMenu.forEach((item, index) => {
+    sandwichesMenu.forEach((item, index) => {
       const menuItem = document.createElement('div');
       menuItem.className = 'menu-item';
       menuItem.innerHTML = `
@@ -44,7 +44,7 @@ const burgersMenu = [
   }
   
   function addToCart(index) {
-    const item = burgersMenu[index];
+    const item = sandwichesMenu[index];
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
     cart.push({
       name: item.name,
