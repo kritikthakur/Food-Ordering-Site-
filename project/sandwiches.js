@@ -1,0 +1,61 @@
+const burgersMenu = [
+    {
+      name: 'Grilled Cheese',
+      description: 'Classic grilled cheese sandwich.',
+      price: 3.00,
+      image: 'coffee.jpg'
+    },
+    {
+      name: 'Veggie Sandwich',
+      description: 'Fresh veggies with hummus.',
+      price: 3.50,
+      image: 'tea.jpeg'
+    },
+    {
+      name: 'Chicken Sandwich',
+      description: 'Grilled chicken with lettuce and mayo.',
+      price: 4.00,
+      image: 'https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80'
+    },
+    {
+      name: 'Club Sandwich',
+      description: 'Triple layer sandwich with bacon and turkey.',
+      price: 4.50,
+      image: 'specialdrink.jpeg'
+    }
+  ];
+  
+  function renderBurgersMenu() {
+    const menuList = document.getElementById('sandwiches');
+    menuList.innerHTML = '';
+  
+    burgersMenu.forEach((item, index) => {
+      const menuItem = document.createElement('div');
+      menuItem.className = 'menu-item';
+      menuItem.innerHTML = `
+        <img src="${item.image}" alt="${item.name}">
+        <h3>${item.name}</h3>
+        <p>${item.description}</p>
+        <div class="price">$${item.price.toFixed(2)}</div>
+        <button class="add-cart-btn" onclick="addToCart(${index})">Add to Cart</button>
+      `;
+      menuList.appendChild(menuItem);
+    });
+  }
+  
+  function addToCart(index) {
+    const item = burgersMenu[index];
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.push({
+      name: item.name,
+      description: item.description,
+      price: item.price,
+      image: item.image
+    });
+    localStorage.setItem('cart', JSON.stringify(cart));
+    alert(`${item.name} added to cart!`);
+  }
+  
+  document.addEventListener('DOMContentLoaded', renderBurgersMenu);
+  window.addToCart = addToCart;
+  
