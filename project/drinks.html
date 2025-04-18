@@ -2,14 +2,61 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Drinks Menu | Café</title>
+  <title>Burgers Menu | Café</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="drinks.css">
+  <style>
+    /* Optional: Minimal header styling if not in CSS */
+    .header {
+      width: 100vw;
+      background: rgba(25,25,25,0.95);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 32px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .header-title {
+      color: #ffcc00;
+      font-size: 1.7em;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .cart-link {
+      color: #ffcc00;
+      background: #203a43;
+      border-radius: 8px;
+      padding: 8px 18px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      border: 1px solid #ffcc00;
+      transition: background 0.2s;
+    }
+    .cart-link:hover {
+      background: #ffcc00;
+      color: #203a43;
+    }
+    .main-content {
+      margin-top: 80px;
+    }
+  </style>
 </head>
 <body>
-  <div class="menu-container">
-    <h1>Our Drinks Menu</h1>
-    <div id="drinks" class="menu-list"></div>
+  <!-- Step 4: Header with Cart button -->
+  <div class="header">
+    <span class="header-title">Café Drinks</span>
+    <a href="cart.html" class="cart-link">Cart 🛒</a>
+  </div>
+  <div class="main-content">
+    <div class="menu-container">
+      <h1>Our Burgers Menu</h1>
+      <div id="burgers" class="menu-list"></div>
+    </div>
   </div>
   <script src="drinks.js"></script>
 </body>
