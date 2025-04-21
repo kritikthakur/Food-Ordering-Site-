@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Desserts Menu | Café</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="desserts.css">
+  <style>
+    /* Optional: Minimal header styling if not in CSS */
+    .header {
+      width: 100vw;
+      background: rgba(25,25,25,0.95);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 32px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .header-title {
+      color: #ffcc00;
+      font-size: 1.7em;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .cart-link {
+      color: #ffcc00;
+      background: #203a43;
+      border-radius: 8px;
+      padding: 8px 18px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      border: 1px solid #ffcc00;
+      transition: background 0.2s;
+    }
+    .cart-link:hover {
+      background: #ffcc00;
+      color: #203a43;
+    }
+    .main-content {
+      margin-top: 80px;
+    }
+  </style>
+  </style>
+</head>
+<body>
+  <div class="menu-container">
+    <a href="cart.html" class="cart-link">Cart 🛒</a>
+    <h1>Our Desserts Menu</h1>
+    <div id="desserts" class="menu-list"></div>
+  </div>
+  <script src="desserts.js"></script>
+</body>
+</html>
