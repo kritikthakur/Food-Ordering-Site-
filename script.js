@@ -1,3 +1,6 @@
+// JavaScript file for Berger Hut Website
+
+
 // Smooth Scrolling for Anchor Links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -10,7 +13,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Form Validation for Reservation and Contact Forms
+function greetUser() {
+    alert("Welcome to Berger Hut!");
+}
+
+
 function validateForm(form) {
+    
     const name = form.name.value.trim();
     const email = form.email.value.trim();
     const phone = form.phone.value.trim();
