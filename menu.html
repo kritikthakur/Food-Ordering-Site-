@@ -3,27 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Menu</title>
+    <title>Menu</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="menu-container">
-        <h1> Menu</h1>
+        <h1>Menu</h1>
+
         <div class="menu-category">
-            <button class="menu-toggle" onclick="toggleMenu('drinks')">Drinks</button>
+            <button class="menu-toggle drinks" onclick="toggleMenu('drinks')">Drinks</button>
             <div id="drinks" class="menu-list"></div>
         </div>
 
         <div class="menu-category">
-            <button class="menu-toggle" onclick="toggleMenu('food')">Food</button>
-            <div id="food" class="menu-list"></div>
+            <button class="menu-toggle food" onclick="toggleMenu('burger')">BURGERS</button>
+            <div id="burger" class="menu-list"></div>
         </div>
 
         <div class="menu-category">
-            <button class="menu-toggle" onclick="toggleMenu('desserts')">Desserts</button>
+            <button class="menu-toggle desserts" onclick="toggleMenu('desserts')">Desserts</button>
             <div id="desserts" class="menu-list"></div>
         </div>
+
+        <div class="menu-category">
+            <button class="menu-toggle sandwiches" onclick="toggleMenu('sandwiches')">Sandwiches</button>
+            <div id="sandwiches" class="menu-list"></div>
+        </div>
+
     </div>
 
     <script src="scrip.js"></script>
