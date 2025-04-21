@@ -1,0 +1,36 @@
+project:
+  name: "Food Ordering Frontend"
+  description: |
+    Food Ordering Frontend is a web-based project designed for efficient and visually appealing food ordering experiences. Built using React and JavaScript, this project leverages modern frontend tools to deliver a seamless user interface for restaurant or cafe management systems. The platform emphasizes interactive design, smooth user flows, and responsive layouts, making it ideal for both customers and business owners.
+
+  framework: "React"
+  language: "JavaScript"
+  package_manager: "npm"
+
+tech_stack:
+  - React: "Component-based UI development"
+  - JavaScript: "Core scripting language for dynamic functionality"
+  - CSS: "Styling and layout management for responsive design"
+
+assets:
+  css:
+    - styl.css: "Animated gradient background and glassy container styles"
+    - styles.css: "Header, hero section, menu, and footer styling"
+    - style.css: "Menu container and toggle button styling"
+  js:
+    - scrip.js: "Dynamic menu creation and toggle functionality"
+    - scriptt.js: "Form validation for sign-in functionality"
+    - script.js: "Smooth scrolling and form validation for reservation/contact forms"
+
+key_features:
+  - Dynamic Menu Creation: "Easily generate and update food menu items interactively."
+  - Animated UI: "Engaging gradient backgrounds and glassy containers for modern aesthetics."
+  - Form Validation: "Robust validation for sign-in, reservation, and contact forms."
+  - Responsive Design: "Optimized for all devices with flexible layouts and smooth scrolling."
+
+learnings:
+  Creating the Food Ordering Frontend project provided hands-on experience in integrating modern JavaScript frameworks, advanced CSS techniques, and best practices in frontend development. Key takeaways include managing dynamic content, implementing user authentication, and ensuring a user-friendly, responsive interface.
+
+collaborators:
+  - name: "Harsh Wadhwa"
+  - name: "Krishna Bhardwaj"
