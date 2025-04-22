@@ -10,6 +10,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    color-scheme: dark;
 }
 
 /* Gradient Animation Keyframes */
@@ -30,6 +31,7 @@ body {
     color: #ffffff;
     text-align: center;
     border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background 0.3s ease;
 }
 
 /* Title */
@@ -61,13 +63,19 @@ h1 {
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.1);
     color: #ffffff;
-    transition: 0.3s;
+    transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+    caret-color: #00ffff;
+}
+
+.input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .input-group input:focus {
     outline: none;
     background: rgba(255, 255, 255, 0.15);
     box-shadow: 0 0 0 2px #00ffff;
+    transform: scale(1.01);
 }
 
 /* Sign-in Button */
@@ -101,7 +109,7 @@ p a {
     color: #00ffff;
     text-decoration: none;
     font-weight: 500;
-    transition: 0.3s;
+    transition: color 0.3s, text-decoration 0.3s;
 }
 
 p a:hover {
