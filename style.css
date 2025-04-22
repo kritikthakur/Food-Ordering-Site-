@@ -5,138 +5,130 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     padding: 20px;
-}
-
-.menu-container {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.menu-category {
-    margin: 20px 0;
-}
-
-.menu-toggle {
-    padding: 10px 20px;
-    background-color: #d8dae3;
     color: white;
-    font-size: 18px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    text-align: left;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.menu-toggle:hover {
-    background-color: #3f4f7b;
-}
-
-.menu-list {
-    display: none;
-    margin-top: 10px;
-}
-
-.menu-item {
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    text-align: left;
-}
-
-.menu-item h3 {
-    font-size: 20px;
-    margin-bottom: 5px;
-    color: #5c6bc0;
-}
-
-.menu-item p {
-    font-size: 16px;
-    color: #666;
-}
-/* Set a background image for the entire page */
-body {
-    font-family: Arial, sans-serif;
-    background-image: url('images.jpg'); /* Change the URL to the path of your image */
-    background-size: cover; /* Ensures the image covers the entire screen */
-    background-position: center; /* Keeps the image centered */
-    padding: 20px;
-    color: white; /* Text color for better contrast */
-}
-
-/* Container for the menu */
 .menu-container {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 700px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    padding: 30px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
-    padding: 20px;
-    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    animation: slideIn 0.6s ease forwards;
 }
 
-/* Menu header */
 h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #ffcc00; /* Yellow color for header */
+    font-size: 40px;
+    margin-bottom: 25px;
+    color: #ffcc00;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    animation: fadeInUp 0.8s ease forwards;
 }
 
-/* Menu category button styles */
 .menu-category {
-    margin: 20px 0;
+    margin: 25px 0;
 }
 
 .menu-toggle {
-    padding: 10px 20px;
-    background-color: #ffcc00; /* Yellow background for buttons */
-    color: #333;
+    padding: 14px 22px;
+    background: linear-gradient(45deg, #ffcc00, #ffaa00);
+    color: #1a1a1a;
     font-size: 18px;
+    font-weight: 600;
     border: none;
     cursor: pointer;
     width: 100%;
-    text-align: left;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    transition: all 0.3s ease;
+    animation: fadeInLeft 0.8s ease forwards;
 }
 
 .menu-toggle:hover {
-    background-color: #ffa000; /* Slightly darker yellow on hover */
+    transform: translateY(-3px) scale(1.02);
+    background: linear-gradient(45deg, #ffaa00, #ff8800);
 }
 
-/* Menu list styles */
 .menu-list {
     display: none;
-    margin-top: 10px;
+    margin-top: 15px;
+    animation: fadeIn 0.5s ease forwards;
 }
 
-/* Menu item styling */
 .menu-item {
-    padding: 10px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    margin-bottom: 10px;
-    border-radius: 5px;
+    padding: 14px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    margin-bottom: 12px;
+    border-radius: 12px;
     text-align: left;
+    transition: all 0.3s ease;
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.menu-item:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
 }
 
 .menu-item h3 {
-    font-size: 20px;
-    margin-bottom: 5px;
+    font-size: 22px;
+    margin-bottom: 6px;
     color: #ffcc00;
 }
 
 .menu-item p {
     font-size: 16px;
-    color: #333;
+    color: #ddd;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInLeft {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(80px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
