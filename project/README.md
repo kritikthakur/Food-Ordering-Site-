@@ -1,17 +1,17 @@
-Project Name: Food Ordering Site
-Team Name: The Rebels
-Team Members:
-Kritik Thakur
-Harsh Wadhwa
-Krishna Bhardwaj
+Project Name :- Food ordering site
+Team Name :- The Rebels
+Team Members :-
+1. Kritik Thakur
+2. Harsh Wadhwa
+3. Krishna Bhardwaj
 
-Project Description:
-Welcome to Berger Hut – a sleek and user-friendly food ordering website tailored for burger enthusiasts. Developed using HTML, CSS, and JavaScript, this project offers a seamless experience where users can explore a curated burger menu and place orders with ease.
+Project Description :-
+Welcome to Berger Hut, a simple and stylish food ordering website designed for burger lovers! Built using HTML, CSS, and JavaScript, this project simulates an online platform where users can browse a burger menu and place orders.
 
-Tech Stack:
-HTML – Provides the structural foundation of the web pages
-CSS – Delivers styling and responsive layout
-JavaScript – Handles dynamic interactions and shopping cart functionality
+Tech Stack
+HTML – Structure of the web pages
+CSS – Styling and layout
+JavaScript – Dynamic interactions and cart logic
 
-License:
-This project is open source and freely available for use and modification.
+ License
+This project is open source and free to use
