@@ -4,7 +4,7 @@ const drinksMenu = [
     name: 'Coffee',
     description: 'A rich and bold espresso-based coffee.',
     price: '$3.50',
-    image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80'
+    image: 'Lemonade.jpeg'
   },
   {
     name: 'Tea',
