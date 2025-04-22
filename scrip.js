@@ -35,7 +35,7 @@ function displayMenu(category) {
         menuItem.innerHTML = `
             <h3>${item.name} - $${item.price.toFixed(2)}</h3>
             <p>${item.description}</p>
-            <button class="add-to-cart-btn" onclick="addToCart(${category}, ${index})">Add to Cart</button>
+            <button class="add-to-cart-btn" onclick="addToCart('${category}', ${index})">Add to Cart</button>
         `;
         menuList.appendChild(menuItem);
     });
