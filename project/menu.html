@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="menu-container">
+        <h1>Menu</h1>
+
+        <div class="menu-category">
+            <button class="menu-toggle" onclick="goToDrinkspage()">Drinks</button>
+            <script>
+                function goToDrinkspage(){
+                    window.location.href='drinks.html';
+                }
+            </script>
+            <div id="drinks" class="menu-list"></div>
+        </div>
+
+        <div class="menu-category">
+            <button class="menu-toggle" onclick="goToBurgerspage()">Burgers</button>
+            <script>
+                function goToBurgerspage(){
+                    window.location.href='burgers.html';
+                }
+            </script>
+            <div id="burger" class="menu-list"></div>
+        </div>
+
+        <div class="menu-category">
+            <button class="menu-toggle" onclick="goToDessertspage()">Desserts</button>
+            <script>
+                function goToDessertspage(){
+                    window.location.href='desserts.html';
+                }
+            </script>
+            <div id="desserts" class="menu-list"></div>
+        </div>
+
+        <!-- Sandwiches Section (Styled like others) -->
+        <div class="menu-category">
+            <button class="menu-toggle" onclick="goToSandwichespage()">Sandwiches</button>
+            <script>
+                function goToSandwichespage(){
+                    window.location.href='sandwiches.html';
+                }
+            </script>
+            <div id="sandwiches" class="menu-list"></div>
+        </div>
+
+    </div>
+
+    <script src="scrip.js"></script>
+</body>
+</html>

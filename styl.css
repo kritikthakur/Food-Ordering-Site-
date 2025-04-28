@@ -1,0 +1,110 @@
+/* Animated Gradient Background */
+body {
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #0f2027);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Gradient Animation Keyframes */
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Glassy Container */
+.signin-container {
+    background: rgba(25, 25, 25, 0.8);
+    border-radius: 16px;
+    padding: 40px 30px;
+    width: 340px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(12px);
+    color: #ffffff;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Title */
+h1 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/* Input Group Styling */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+    color: #aaa;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 0 2px #00ffff;
+}
+
+/* Sign-in Button */
+.signin-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #00ffff, #3a7bd5);
+    color: #000;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.signin-btn:hover {
+    background: linear-gradient(135deg, #3a7bd5, #00ffff);
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 255, 255, 0.3);
+}
+
+/* Footer Text */
+p {
+    font-size: 14px;
+    margin-top: 18px;
+    color: #ccc;
+}
+
+p a {
+    color: #00ffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+p a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
