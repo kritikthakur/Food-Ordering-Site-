@@ -75,7 +75,7 @@ body {
     padding-left: 28px;
     position: relative;
     color: #ffcc00;
-    line-height: 1.5;
+    line-height: 1.45;
 }
 
 .about-features li::before {
@@ -89,7 +89,7 @@ body {
 
 @media (max-width: 700px) {
     .about-container {
-        padding: 28px 15px;
+        padding: 28px 16px;
         max-width: 95vw;
     }
     .about-container h1 {
@@ -100,6 +100,6 @@ body {
     }
     .about-container p,
     .about-features li {
-        font-size: 15.5px;
+        font-size: 15.3px;
     }
 }
