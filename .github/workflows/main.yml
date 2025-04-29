@@ -1,20 +1,25 @@
-project:
-  name: Food Ordering Frontend
-  framework: React
-  language: JavaScript
-  package_manager: npm
+name: CI
 
-assets:
-  css:
-    - styl.css # Animated gradient background and glassy container styles
-    - styles.css # Header, hero section, menu, and footer styling
-    - style.css # Menu container and toggle button styling
-  js:
-    - scrip.js # Dynamic menu creation and toggle functionality
-    - scriptt.js # Form validation for sign-in functionality
-    - script.js # Smooth scrolling and form validation for reservation/contact forms
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
 
-description: >
-  This YAML document lists the CSS and JavaScript files used in the Cafe Management Frontend project. 
-  The CSS files define visual elements like gradients, layout styles, and interactive buttons, while 
-  the JavaScript files handle dynamic menu creation, form validation, and smooth scrolling.
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run build
+        run: npm run build
